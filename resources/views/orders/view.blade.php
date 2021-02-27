@@ -51,14 +51,24 @@
 
                 
                 <div class="kt-section kt-section--first">
-                    <div class="form-group">
-                        <label><b>Name:</b></label>
+                <div class="form-group">
+                        <label><b>Order ID:</b></label>
                         <br>
-                        {{$data->name}}
+                        {{$data->id}}
                     </div>
                     <div class="form-group">
-                        <label><b>Price:</b></label> <br>
-                        {{$data->price}}
+                        <label><b>Customer Name:</b></label>
+                        <br>
+                        {{$data->customers()->first()->name}}
+                    </div>
+                    <div class="form-group">
+                        <label><b>Product Ordered</b></label>
+                        <br>
+                        {{$data->products()->first()->name}}
+                    </div>
+                    <div class="form-group">
+                        <label><b>Product Price:</b></label> <br>
+                        {{$data->products()->first()->price}}
                     </div>
                 </div>
             </div>

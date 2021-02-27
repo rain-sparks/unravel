@@ -35,5 +35,4 @@ Route::get('/products/delete/{id}', ['as' => 'products.delete', 'uses' => 'Produ
 Route::get('/customers/view/{id}', ['as' => 'customers.view', 'uses' => 'CustomerController@view']);
 Route::get('/customer/edit/{id}', ['as' => 'customer.edit', 'uses' => 'CustomerController@edit']);
 
-Route::get('/orders/view/{id}', ['as' => 'orders.view', 'uses' => 'OrdersController@view']);
-Route::get('/orders/edit/{id}', ['as' => 'orders.edit', 'uses' => 'OrdersController@edit']);
+Route::get('/orders/view/{id}', ['as' => 'orders.view', 'uses' => 'OrderController@view']);

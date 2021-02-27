@@ -34,7 +34,7 @@ class OrderController extends Controller
 
     public function view($id)
     {
-        $data = Orders::where('id',$id)->first();
+        $data = Orders::with(['customers','products'])->first();
         return view('orders.view')->with('data',$data);
     }
 
