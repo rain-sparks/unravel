@@ -1,0 +1,39 @@
+/* Body */
+body {
+    font-family: Poppins, Helvetica, sans-serif !important;
+}
+
+/* End of Body */
+
+/* Login page */
+.kt-login__logo img {
+    filter: brightness(0) invert(1);
+    max-width: 250px;
+}
+
+.kt-login__btn-primary {
+    background-color: #EE6226 !important;
+    border-color: #EE6226 !important;
+}
+
+.kt-login .invalid-feedback {
+    color: #fff;
+}
+
+/* End of Login page */
+
+/* Header */
+.kt-aside__brand-logo img {
+    filter: brightness(0) invert(1);
+    max-width: 120px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.select2-container {
+    min-width: 100%;
+}
+
+/* .grecaptcha-badge { visibility: hidden; } */
